@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+
+Hello.  Thank you for viewing my portfolio.
+
+As you may have noticed, it is a little unusual.  Since I am a web designer
+and developer, I have designed my portfolio differently than I would design
+a client-facing site.
+
+It is important to know your target audience in web development.  The people
+who will be viewing this site are recruiters or potential employers. Knowing
+this, I deemed it more important to showcase my abilities than to cater to
+browsers incapable of doing what I myself am capable of doing.
+
+As such, this site will probably not work well in IE7 or less, and it may not
+work well with screen readers or assistive technologies. When best practice
+overlapped universal browser support, such practices were employed.
+
+I ask that you do not judge on that omission; one must trust that the ability
+to create something so outside of the box necessitates a knowledge of what lies
+within that box.
+
+
+
+-->
+<head>
+    <meta charset="utf-8">
+    <title>Jonathan Adamski</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.easing.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.transit.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <section id="home">
+            <div class="line top">
+                <div class="layer">
+                    <h1 class="center">
+                        <i class="fastener clothespin-with-string position-left position-top"></i>
+                        <i class="fastener clothespin-with-string reversed position-right position-top"></i>
+                        <span>Jonathan Adamski</span>
+                    </h1>
+                </div>
+            </div>
+
+            <nav class="line middle">
+                <div class="layer">
+                    <a href="#about" class="nav-about"><span class="shadow swingy nav-item"><span class="icon">About</span></span><i class="fastener spiral-notebook position-top position-center"></i></a>
+                    <a href="#clients" class="nav-clients"><span class="shadow swingy nav-item"><span class="icon">Clients</span></span><i class="fastener spiral-notebook position-top position-center"></i></a>
+                    <a href="#skills" class="nav-skills"><span class="shadow swingy nav-item"><span class="icon">Skills</span></span><i class="fastener spiral-notebook position-top position-center"></i></a>
+                    <a href="#projects" class="nav-projects"><span class="shadow swingy nav-item"><span class="icon">Projects</span></span><i class="fastener spiral-notebook position-top position-center"></i></a>
+                    <a href="#contact" class="nav-contact"><span class="shadow swingy nav-item"><span class="icon">Contact</span></span><i class="fastener spiral-notebook position-top position-center"></i></a>
+                </div>
+            </nav>
+        </section>
+
+        <section id="about">
+            <div class="line top">
+                <div class="layer">
+                    <div class="fixture">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="shadow heading">
+                            <h2>About</h2>
+                            <a href="#" class="to-home">Back to home</a>
+                            <a href="#clients" class="to-next">&gt;</a>
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="zelda">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="paper shadow swingy">
+                            <img src="img/about/zelda.jpg" alt="" title="Zelda von Schnauzer, my dog">
+                        </div>
+                    </div>
+                    <div class="chalkboard shadow" id="about-content">
+                        <i class="fastener clothespin position-top position-left"></i>
+                        <i class="fastener clothespin position-top position-right"></i>
+                        <p>I am a web developer, web designer, and information architect based in Grand Rapids, MI.</p>
+                        <p>I have a Bachelors degree in Computer Science and over 10 years experience.</p>
+                        <p>My work has been featured at CES, MWC, and several television commercials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line bottom">
+                <div class="layer">
+                    <div class="fixture" id="me">
+                        <i class="fastener clamp ccw-rotate position-top position-left"></i>
+                        <i class="fastener clamp cw-rotate position-top position-right"></i>
+                        <img src="img/about/me.jpg" class="shadow swingy" alt="" title="That's me, Jonathan Adamski">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients">
+            <div class="line top">
+                <div class="layer">
+                    <div class="fixture">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="shadow heading">
+                            <h2>Clients</h2>
+                            <a href="#about" class="to-prev">&lt;</a>
+                            <a href="#" class="to-home">Back to home</a>
+                            <a href="#skills" class="to-next">&gt;</a>
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="ford">
+                        <i class="fastener clamp-with-string position-top position-left"></i>
+                        <i class="fastener reversed clamp-with-string position-top position-right"></i>
+                        <img src="img/clients/ford.png" alt="Ford Motor Company" class="swingy">
+                    </div>
+
+                    <div class="fixture" id="raytheon">
+                        <i class="fastener clamp reversed position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/raytheon.png" alt="Raytheon Professional Services">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="uhc">
+                        <i class="fastener clothespin position-top position-left"></i>
+                        <i class="fastener clamp position-top position-right"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/uhc.png" alt="United Healthcare">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="onstar">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/onstar.png" alt="OnStar">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="gm">
+                        <i class="fastener clothespin position-top position-left"></i>
+                        <i class="fastener clothespin position-top position-right"></i>
+                        <img src="img/clients/gm.png" alt="General Motors" class="shadow swingy">
+                    </div>
+                </div>
+            </div>
+            <div class="line middle">
+                <div class="layer">
+                    <div class="fixture" id="mediag">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/mediag.png" alt="Media Genesis">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="bcbsm">
+                        <i class="fastener clothespin position-top position-left"></i>
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <i class="fastener clothespin position-top position-right"></i>
+                        <img src="img/clients/bcbsm.png" alt="Blue Cross Blue Shield of Michigan" class="swingy">
+                    </div>
+
+                    <div class="fixture" id="twenty20">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/2020.png" alt="2020 Technologies">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="dodge">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/dodge.png" alt="Dodge">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="jeep">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/jeep.png" alt="Jeep">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="vw">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <img src="img/clients/vw.png" alt="Volkswagen" class="swingy">
+                    </div>
+                </div>
+            </div>
+            <div class="line bottom">
+                <div class="layer">
+                    <div class="fixture" id="axeda">
+                        <i class="fastener clothespin position-top position-left"></i>
+                        <i class="fastener clothespin position-top position-right"></i>
+                        <img src="img/clients/axeda.png" alt="Axeda" class="shadow swingy">
+                    </div>
+
+                    <div class="fixture" id="persis">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/persis.png" alt="Persis Consulting">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="chrysler">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/clients/chrysler.png" alt="Chrysler">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="bq">
+                        <i class="fastener clamp reversed position-top position-center"></i>
+                        <img src="img/clients/bq.png" alt="B&amp;Q" class="shadow swingy">
+                    </div>
+
+                    <div class="fixture" id="scion">
+                        <i class="fastener clamp-with-string position-top position-left"></i>
+                        <i class="fastener reversed clamp-with-string position-top position-right"></i>
+                        <img src="img/clients/scion.png" alt="Scion" class="swingy">
+                    </div>
+
+                    <div class="fixture" id="ikea">
+                        <i class="fastener clothespin position-top position-left"></i>
+                        <i class="fastener clothespin position-top position-right"></i>
+                        <img src="img/clients/ikea.png" alt="IKEA" class="shadow swingy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="line top">
+                <div class="layer">
+                    <div class="fixture">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="shadow heading">
+                            <h2>Skills</h2>
+                            <a href="#clients" class="to-prev">&lt;</a>
+                            <a href="#" class="to-home">Back to home</a>
+                            <a href="#projects" class="to-next">&gt;</a>
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="html">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/html.png" alt="HTML, CSS, jQuery">
+                        </div>
+                    </div>
+
+                    <div class="fixture shadow" id="cs">
+                        <img src="img/skills/cs.png" alt="Adobe Creative Suite (all versions)">
+                    </div>
+
+                    <div class="fixture" id="angular">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/angular.png" alt="Angular">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="cq5">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/cq5.png" alt="CQ5 (Communique)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line middle">
+                <div class="layer">
+                    <div class="fixture" id="lamp">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/lamp.png" alt="LAMP stack: Linux, Apache, MySQL, PHP">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="backbone">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/backbone.png" alt="Backbone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line bottom">
+                <div class="layer">
+                    <div class="fixture" id="node">
+                        <i class="fastener clamp position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/node.png" alt="Node JS">
+                        </div>
+                    </div>
+
+                    <div class="fixture" id="android">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="canvas shadow swingy">
+                            <img src="img/skills/android.png" alt="Android">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="line top">
+                <div class="layer">
+                    <div class="fixture">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="shadow heading">
+                            <h2>Projects</h2>
+                            <a href="#skills" class="to-prev">&lt;</a>
+                            <a href="#" class="to-home">Back to home</a>
+                            <a href="#contact" class="to-next">&gt;</a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="jna-1">
+                        <div class="static">
+                            <a href="http://www.jonathanadamski.com/archive/2011" target="_blank"><img src="img/projects/jna-1.jpg" alt="Portfolio (2011)" title="Portfolio (2011)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="jna-2">
+                        <div class="static">
+                            <a href="http://www.jonathanadamski.com/archive/2009" target="_blank"><img src="img/projects/jna-2.jpg" alt="Portfolio (2009)" title="Portfolio (2009)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="infotainment">
+                        <div class="static">
+                            <a href="http://www.youtube.com/watch?v=-u_HxD0VU80" target="_blank"><img src="img/projects/infotainment.jpg" alt="GM Infotainment SDK/API (2012)" title="GM Infotainment SDK/API (2012)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="mwc">
+                        <div class="static">
+                            <a href="http://www.youtube.com/watch?v=-e2bCLmHoVQ" target="_blank"><img src="img/projects/mwc.jpg" alt="GM Connected Car, Mobile World Congress (2012)" title="GM Connected Car, Mobile World Congress (2012)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="ces">
+                        <div class="static">
+                            <a href="http://translogic.aolautos.com/2011/01/09/ces-2011-hands-on-with-verizons-4g-lte-equipped-buick-lacrosse/" target="_blank"><img src="img/projects/ces.jpg" alt="OnStar 4G LTE Car, Consumers Electronic Show (2011)"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line middle">
+                <div class="layer">
+                    <div class="tv" id="baker">
+                        <div class="static">
+                            <a href="http://www.thebakersformula.com/" target="_blank"><img src="img/projects/baker.jpg" alt="The Baker's Formula (2013)" title="The Baker's Formula (2013)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="4g-car">
+                        <div class="static">
+                            <a href="http://www.youtube.com/watch?v=_uLTg551idI" target="_blank"><img src="img/projects/4g-car.jpg" alt="GM Connected Car (2011)" title="GM Connected Car (2011)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="api">
+                        <div class="static">
+                            <a href="http://www.youtube.com/watch?v=6tvYKIxuClI" target="_blank"><img src="img/projects/api.jpg" alt="GM Downloadable Apps API/SDK (2011)" title="GM Downloadable Apps API/SDK (2011)"></a>
+                        </div>
+                    </div>
+
+                    <div class="tv" id="ces2">
+                        <div class="static">
+                            <a href="http://www.autoblog.com/2011/12/21/onstar-bringing-another-4g-lte-concept-to-ces/" target="_blank"><img src="img/projects/ces2.jpg" alt="Onstar Connected Car, Consumer Electronic Show (2011)" title="OnStar Connected Car, Consumer Electronic Show (2011)"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="line top">
+                <div class="layer">
+                    <div class="fixture">
+                        <i class="fastener clothespin position-top position-center"></i>
+                        <div class="shadow heading">
+                            <h2>Contact</h2>
+                            <a href="#projects" class="to-prev">&lt;</a>
+                            <a href="#" class="to-home">Back to home</a>
+                        </div>
+                    </div>
+
+                    <div class="chalkboard">
+                        <form method="POST" action="services/contact/" target="_blank">
+                            <textarea id="form-message"></textarea>
+                            <input type="text" placeholder="Your Email Address" id="form-email">
+                            <input type="submit" value="Send" id="form-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="line middle">
+                <div class="layer">
+                    <div class="fixture" id="jeremy"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="alerts" class="global">
+        <i class="fastener string position-top position-center"></i>
+        <div class="shadow small-chalkboard">
+            <p class="error">Please try again.</p>
+            <p class="success">Your email is on its way.</p>
+        </div>
+    </div>
+
+    <!-- forgive me - I know this is bad joo-joo, but this plugin requires inclusion this way -->
+    <script type="text/javascript" src="js/libs/jquery.parallax.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46455521-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+</body>
+</html>

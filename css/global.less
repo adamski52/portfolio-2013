@@ -1,0 +1,271 @@
+@import "colors.less";
+
+@font-face {
+    font-family: harabara;
+    src: url(../fonts/harabara.ttf);
+}
+
+@font-face {
+    font-family: chalk;
+    src: url(../fonts/chalkboard.ttf);
+}
+
+@font-face {
+    font-family: angrychalk;
+    src: url(../fonts/angrychalk.ttf);
+}
+
+html, body, ul, li, p, h1, h2, h3, h4, h5, h6, input, textarea {
+	padding: 0;
+	margin: 0;
+    border: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url(../img/bg.jpg) no-repeat center center #000;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 10pt;
+    overflow: hidden;
+}
+
+h1, h2 {
+    position: relative;
+    display: inline-block;
+    padding: 50px 50px 0px 50px;
+    font-family: harabara;
+    font-size: 9em;
+    color: #fff;
+    text-transform: lowercase;
+    text-shadow: -2px -2px #959595;
+}
+
+h2 {
+    padding: 7px;
+    opacity: .9;
+    text-shadow: 2px 2px #000000;
+    line-height: 136px;
+}
+
+.heading {
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    background: url(../img/mounts/static.gif);
+    top: 69px;
+    position: relative;
+}
+
+.to-prev,
+.to-home,
+.to-next {
+    overflow: hidden;
+    line-height: 44px;
+    font-family: harabara;
+    font-size: 3em;
+    text-decoration: none;
+    color: #fff;
+    text-transform: lowercase;
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    position: absolute;
+    left: -50px;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.to-prev {
+    top: 0;
+}
+
+.to-next {
+    top: 100px;
+}
+
+.to-home {
+    background: url(../img/icons/icons.png) no-repeat -11px -345px #0097c8;
+    text-indent: -9999px;
+    top: 50px;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    background: url(../img/cords.png) repeat-x 0px 103px;
+}
+
+section {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    padding-right: 200px;
+}
+
+.layer {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.line {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.top {
+    top: 98px;
+    z-index: 999;
+}
+
+.middle {
+    top: 279px;
+    z-index: 998;
+}
+
+.bottom {
+    top: 440px;
+    z-index: 997;
+}
+
+.layer {
+    width: 100%;
+    overflow: visible;
+}
+
+
+.shadow {
+    -moz-box-shadow: 0px 6px 30px 10px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0px 6px 30px 10px rgba(0,0,0,.7);
+    box-shadow: 0px 6px 30px 10px rgba(0,0,0,.7);
+}
+
+.paper {
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding: 13px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #919191 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#919191)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#919191 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffffff 0%,#919191 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffffff 0%,#919191 100%); /* IE10+ */
+    background: linear-gradient(135deg, #ffffff 0%,#919191 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#919191',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.canvas {
+    z-index: 100;
+    border: 7px solid #fff;
+    position: relative;
+    display: inline-block;
+    padding: 13px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #dddddd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffffff 0%,#dddddd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffffff 0%,#dddddd 100%); /* IE10+ */
+    background: linear-gradient(135deg, #ffffff 0%,#dddddd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.fixture {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.global {
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    margin-left: -131px;
+    z-index: 999999;
+}
+
+.small-chalkboard {
+    position: relative;
+    display: table-cell;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: url(../img/mounts/mounts.jpg) top left no-repeat;
+    padding: 30px;
+    width: 262px;
+    height: 165px;
+    top: 135px;
+    vertical-align: middle;
+
+    p {
+        font-family: angrychalk;
+        font-size: 2.6em;
+        text-align: center;
+        display: none;
+        color: rgba(255, 255, 255, .8);
+
+        &.success {
+            color: rgba(0, 255, 0, .8);
+        }
+
+        &.error {
+            color: rgba(255, 0, 0, .8);
+        }
+    }
+}
+
+.chalkboard {
+    float: left;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: url(../img/mounts/mounts.jpg) top left no-repeat;
+    padding: 30px;
+    width: 642px;
+    height: 408px;
+    
+    p {
+        margin-bottom: 1.3em;
+        line-height: 1em;
+    }
+}
+
+.tv {
+    width: 413px;
+    height: 244px;
+    float: left;
+    position: relative;
+    display: inline-block;
+    margin-top: -20px;
+    padding: 10px 10px 14px 9px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: url(../img/mounts/mounts.jpg) no-repeat -642px 2px;
+}
+
+.static {
+    width: 100%;
+    height: 100%;
+    background: url(../img/mounts/static.gif);
+}
+
+.swingy {
+    transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+}

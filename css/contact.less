@@ -1,0 +1,96 @@
+@import "colors.less";
+
+#contact {
+    width: 100%;
+    min-width: 950px;
+    left: 50000px;
+    
+    .heading {
+        top: 110px;
+    }
+
+    h2 {
+        background-color: @contact-h2;
+    }
+
+    .to-prev {
+        background: @projects;
+    }
+
+    .to-home {
+        top: 75px;
+        left: -75px;
+        width: 90px;
+        background-position: 12px -345px;
+    }
+
+    .fixture {
+        margin-top: -10px;
+    }
+
+    .top {
+        div {
+            z-index: 999;
+        }
+    }
+
+    form {
+        text-align: left;
+    }
+
+    textarea {
+        background: transparent;
+        border: 3px solid rgba(255, 255, 255, .2);
+        border-right: none;
+        border-left: none;
+        outline: none;
+        line-height: 35px;
+        padding: 10px 20px;
+        width: 586px;
+        height: 294px;
+        padding: 0;
+        color: #fff;
+        font-family: angrychalk;
+        font-size: 3em;
+    }
+
+    #form-email {
+        border: none;
+        border-bottom: 3px solid rgba(255, 255, 255, .2);
+        outline: none;
+        padding: 0;
+        background: transparent;
+        color: #fff;
+        font-family: angrychalk;
+        font-size: 2em;
+        width: 470px;
+        margin-top: 20px;
+        margin-right: 18px;
+    }
+
+    #form-submit {
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, .05);
+        padding: 10px;
+        color: #fff;
+        font-family: angrychalk;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #jeremy {
+        width: 283px;
+        height: 204px;
+        margin-left: 940px;
+        background: url(../img/mounts/mounts.jpg) no-repeat -1055px 0;
+
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+        -moz-filter: blur(1px);
+        -o-filter: blur(1px);
+        -ms-filter: blur(1px);
+        filter: url(blur.svg#blur);
+        filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+    }
+}
